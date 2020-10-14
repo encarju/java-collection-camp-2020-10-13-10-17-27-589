@@ -22,7 +22,7 @@ public class MyMap {
     }
 
     public List<String> mapLetter() {
-        return array.stream().map(integer -> letters[integer-1]).collect(Collectors.toList());
+        return array.stream().map(integer -> letterList.get(integer-1)).collect(Collectors.toList());
     }
 
     public List<Integer> sortFromBig() {
