@@ -13,7 +13,8 @@ public class Reduce {
     }
 
     public double getAverage() {
-        throw new NotImplementedException();
+        return arrayList.stream()
+                .reduce(0,(integer1,integer2)->integer1+integer2).doubleValue()/arrayList.size();
     }
 
     public int getMaxValue() {
