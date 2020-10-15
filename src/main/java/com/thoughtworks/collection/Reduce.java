@@ -23,6 +23,7 @@ public class Reduce {
     }
 
     public int getLastOdd() {
-        throw new NotImplementedException();
+        return arrayList.stream()
+                .reduce(0, (lastOdd, integer) -> integer % 2 != 0 ? integer : lastOdd);
     }
 }
